@@ -1,0 +1,25 @@
+Implement feedback collector using react. Below is the sample feedback collector. 
+
+
+Each question has 2 options. User will select one option and based on the user selected option next question should be shown to the user
+Each question also has the NEXT and PREV navigation buttons to allow the user to recheck his answers. User should be able to navigate to the already answered questions and change his answers. 
+PREV and NEXT navigation option should be disbled depending on whether the previous or next navigation availability.
+
+Below is the api to get the question data from the server:
+https://api.learnyst.com/getQuestions
+
+Below is the response format
+[
+{qId: 1, question: “ARE YOU HAPPY WITH OUR COURSE CONTENT?”,
+OPTION1: {TEXT: “YES”, nextQid: 2, OPTION2: {TEXT: “NO”, nextQid: 3} },
+{qId: 2, question: “WHICH PART OF COURSE YOU LIKED MOST??”,
+OPTION1: {TEXT: “VIDEO”, nextQid: 4, OPTION2: {TEXT: “TEST”, nextQid: 7} },
+{qId: 3, question: “WHICH PART OF THE COURSE YOU DID NOT LIKE??”,
+OPTION1: {TEXT: “VIDEO”, nextQid: 5, OPTION2: {TEXT: “TEST”, nextQid: 6} },
+………………...
+] 
+
+After collecting the feedback the result should be posted to server with the below api:
+
+https://api.learnyst.com/feedbackData
+{[{qid:1, Response:”Yes”}, {qid:2, Response: “Video”}, ……………..]}
