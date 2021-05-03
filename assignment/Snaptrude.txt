@@ -1,0 +1,3 @@
+Create a ReactJS app (MERN stack) to get the user to choose a location on a map (use google maps or mapbox), display the region visible in the map and then on the click of a button, capture the visible region in the map as an image and apply it as a material (texture) to a 3D cuboid using BabylonJs.
+
+You can check for online resources, and feel free to shoot any questions at me. Also do tell me a timeline by when can I expect the solution, we will have a call after that
